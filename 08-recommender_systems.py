@@ -58,4 +58,4 @@ Rating_avg = Rating_avg.astype({"asin": str})
 product_customer = Rating_avg.groupby(by = 'reviewerID')['asin'].apply(lambda x:','.join(x))
 
 def customer_product_score(customer):
-    
+    product_bought_by_customer = checking.columns[checking[checking.index==customer].notna().any()].tolist()    
