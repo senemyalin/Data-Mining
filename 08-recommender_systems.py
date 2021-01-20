@@ -9,3 +9,5 @@ import pandas as pd
 
 data = pd.read_pickle("customers_more_than_one_product.pkl")
 data = data.drop(['reviewTime','reviewText','brand','subjectivity'], 1)
+
+data['reviewerID'] = data["reviewerID"].rank(method='dense').astype(int)
