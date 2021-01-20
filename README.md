@@ -1,6 +1,9 @@
 # Data-Mining
 # DATA ANALYSIS OF AMAZON’S DATASET
 
+**Pickles and Datasets**
+
+https://drive.google.com/drive/folders/1SZCgZAEFSSb_P0045nPAjJSYi34APE2B?usp=sharing
 ************************
 REFERENCES
 
