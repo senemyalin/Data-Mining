@@ -133,3 +133,19 @@ final score for the customer later.
 4-We used two methods commonly used for this :
 a)The customer average over the row.
 b)The product average over the column.
+5-We calculated the similarity between the users.
+6-We created ”find similar customers” function which takes the similarity matrix and the value
+of n as input and returns the nearest n neighbors for all the customers. We chose n as 30.
+7-We created ”customer product score” function which uses our above discussion to calculate
+predictions.
+8-We asked the user customer ID and printed the recommendations of 5 products for this
+customer.
+
+3-Conclusion
+
+In conclusion, we worked on NLP(Natural Language Processing), Neural Network Processing and Recommendation System. We learned how to analyze text-based data. In this analysis,
+we cleared the text by removing the punctuation and stop words. As a result of our research, we
+saw that every word has polarity and subjectivity, interpreted according to these values.
+Then we worked on application of a neural network with multi layer perceptron. By using
+MLPClassifier we taught the machine the product information and had it guess which brand it
+was.
