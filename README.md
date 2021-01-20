@@ -62,3 +62,18 @@ are there.
 3-Because our data makes sense, we removed the most and least purchased brands from this
 data.
 4-We plotted our 2 results.
+
+2.3 Comparing Analysis
+
+2.3.1 Sentiment Analysis
+
+1-We applied the ”sentiment.polarity” and ”sentiment.subjectivity” methods of the ”textblob”
+library to find the polarity and subjectivity of brand’s ”reviewText”.
+2-Each word in ”reviewText” column is labeled in terms of polarity and subjectivity.
+3-We took the average subjectivity and polarity of product reviews that have the same brand
+and assigned them to that brand.
+
+Polarity: How positive or negative a word is. -1 is very negative. +1 is very positive.
+Subjectivity: How subjective, or opinionated a word is. 0 is fact. +1 is very much an opinion.
+
+4-We plotted these results
