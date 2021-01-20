@@ -80,3 +80,4 @@ def customer_product_score(customer):
         score_sum = f['score'].sum()
         cor_sum = f['correlation'].sum()
         final_score = avg_customer + (score_sum/cor_sum)
+        scores.append(final_score)
