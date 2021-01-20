@@ -14,3 +14,4 @@ data = data.drop(["reviewTime","reviewText","title"],1)
 X= data["asin"].values[:15000]
 x1=data["overall"].values[:15000]
 x2=data["subjectivity"].values[:15000]
+x3=data["polarity"].values[:15000]
