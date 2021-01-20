@@ -35,3 +35,7 @@ import time
 
 #Hidden layer size'ı da değiştirerek denedik. En başarılı sonuç alıdğımız bu oldu.
 clf= MLPClassifier(hidden_layer_sizes=(16,16), max_iter=1000)
+
+start = time.time()
+clf.fit(X_train, y_train)
+stop = time.time()
