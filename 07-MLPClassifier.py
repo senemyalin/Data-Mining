@@ -28,3 +28,10 @@ y= data["brand"].values[:15000]
 #to split into train test sets
 from sklearn.model_selection import train_test_split
 X_train,X_test , y_train , y_test = train_test_split(X, y, test_size=0.3, random_state=1)
+
+
+from sklearn.neural_network import MLPClassifier
+import time
+
+#Hidden layer size'ı da değiştirerek denedik. En başarılı sonuç alıdğımız bu oldu.
+clf= MLPClassifier(hidden_layer_sizes=(16,16), max_iter=1000)
