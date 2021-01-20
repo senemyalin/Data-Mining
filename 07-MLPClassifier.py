@@ -15,3 +15,4 @@ X= data["asin"].values[:15000]
 x1=data["overall"].values[:15000]
 x2=data["subjectivity"].values[:15000]
 x3=data["polarity"].values[:15000]
+X=np.vstack((X, x1,x2,x3)).T
