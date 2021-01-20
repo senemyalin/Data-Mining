@@ -92,3 +92,6 @@ def customer_product_score(customer):
 
 customer = int(input("Enter the customer ID: "))
 predicted_product = customer_product_score(customer)
+print(" ")
+print("The Recommendations of 5 Products for :",customer)
+print(" ")
