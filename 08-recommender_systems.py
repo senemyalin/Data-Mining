@@ -75,3 +75,4 @@ def customer_product_score(customer):
         index = not_null.index.values.squeeze().tolist()
         correlated = similarity_with_product.loc[customer,index]
         f = pd.concat([not_null, correlated], axis=1)
+        f.columns = ['adg_score','correlation']
