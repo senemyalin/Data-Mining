@@ -13,3 +13,6 @@ data = data.drop(['reviewTime','reviewText','brand','subjectivity'], 1)
 data['reviewerID'] = data["reviewerID"].rank(method='dense').astype(int)
 data['asin'] = data["asin"].rank(method='dense').astype(int)
 data["overall"]= data["overall"].astype(int)
+
+
+Mean = data.groupby(by="reviewerID",as_index=False)['overall'].mean()
