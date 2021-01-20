@@ -59,3 +59,4 @@ product_customer = Rating_avg.groupby(by = 'reviewerID')['asin'].apply(lambda x:
 
 def customer_product_score(customer):
     product_bought_by_customer = checking.columns[checking[checking.index==customer].notna().any()].tolist()    
+    customer_values = sim_customer_30_p[sim_customer_30_p.index==customer].values
