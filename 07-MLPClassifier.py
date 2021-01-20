@@ -16,3 +16,8 @@ x1=data["overall"].values[:15000]
 x2=data["subjectivity"].values[:15000]
 x3=data["polarity"].values[:15000]
 X=np.vstack((X, x1,x2,x3)).T
+
+y= data["brand"].values[:15000]
+
+#Bir de ürünün bilgilerini öğretip kim almıştır gibi bir çıkarımda bulunmaya çalıştık
+#error rate 0,61 çıktı.
