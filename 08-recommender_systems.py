@@ -41,3 +41,8 @@ cos_sim = cosine_similarity(final_product)
 np.fill_diagonal(cos_sim, 0 )
 similarity_with_product = pd.DataFrame(cos_sim,index=final_product.index)
 similarity_with_product.columns=final_product.index
+
+def find_similar_customers(dataFrame,n):
+
+  
+    return dataFrame
