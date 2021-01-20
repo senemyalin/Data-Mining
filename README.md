@@ -24,3 +24,23 @@ When we are doing text analysis part, we used several NLP libraries in Python in
 TextBlob along with the standard machine learning libraries including pandas and scikit-learn.
 We got results from the data which we analysed and plotted these results in many different ways.
 Also we did Recommendation Analysis. After that, we printed the suggestions.
+
+2.1 Data Pre-processing
+
+2.1.1 Getting the data
+
+We had 2 data sets, so we merged our data according to the columns that we will use. Our data
+which we merged, has the columns below.
+overall - rating of the product
+reviewTime - time of the review (raw)
+reviewerID - ID of the reviewer, e.g. A2SUAM1J3GNN3B
+asin - ID of the product, e.g. 0000013714
+reviewText - text of the review
+title - name of the product
+brand - brand name
+
+2.1.2 Cleaning the data
+
+We made text lowercase, removed punctuation and removed words containing numbers. Also
+we got rid of some additional punctuation, non-sensical text that was missed the first time
+around and stop words on ”reviewText” column.
