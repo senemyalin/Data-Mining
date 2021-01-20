@@ -68,3 +68,4 @@ def customer_product_score(customer):
     evaluated_product = list(map(int, evaluated_product))
     scores = []
     for product in evaluated_product:
+        choosen_product = final_product.loc[:,product]
