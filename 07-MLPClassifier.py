@@ -39,3 +39,7 @@ clf= MLPClassifier(hidden_layer_sizes=(16,16), max_iter=1000)
 start = time.time()
 clf.fit(X_train, y_train)
 stop = time.time()
+
+accuracy=clf.score(X_test, y_test)
+y_pred = clf.predict(X_test)
+error_rate = 1 - accuracy
