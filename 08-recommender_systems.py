@@ -64,3 +64,4 @@ def customer_product_score(customer):
     is_in = product_customer[product_customer.index.isin(customer_values_list)]
     a = ','.join(is_in.values)
     product_bought_by_similar_customer = a.split(',')
+    evaluated_product = list(set(product_bought_by_similar_customer)-set(list(map(str, product_bought_by_customer))))
