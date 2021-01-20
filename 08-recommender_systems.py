@@ -29,3 +29,6 @@ final_product = last.fillna(last.mean(axis=0))
 
 # Replacing NaN by user Average
 final_customer = last.apply(lambda row: row.fillna(row.mean()), axis=1)
+
+# customer similarity on replacing NAN by Customer(Reviewer) avg
+a = cosine_similarity(final_customer)
