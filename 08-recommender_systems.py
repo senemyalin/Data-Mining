@@ -50,3 +50,6 @@ def find_similar_customers(dataFrame,n):
 
 # top 30 neighbours for each customer
 sim_customer_30_c = find_similar_customers(similarity_with_customer,30)
+
+# top 30 neighbours for each customer
+sim_customer_30_p = find_similar_customers(similarity_with_product,30)
