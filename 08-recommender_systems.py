@@ -22,3 +22,7 @@ Rating_avg['adg_rating'] = Rating_avg['overall_x']-Rating_avg['overall_y']
 checking = pd.pivot_table(Rating_avg,values='overall_x',index='reviewerID',columns='asin')
 
 last = pd.pivot_table(Rating_avg,values='adg_rating',index='reviewerID',columns='asin')
+
+
+# Replacing NaN by Product(Asin) Average
+final_product = last.fillna(last.mean(axis=0))
