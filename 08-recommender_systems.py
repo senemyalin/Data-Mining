@@ -69,3 +69,4 @@ def customer_product_score(customer):
     scores = []
     for product in evaluated_product:
         choosen_product = final_product.loc[:,product]
+        is_in = choosen_product[choosen_product.index.isin(customer_values_list)]
