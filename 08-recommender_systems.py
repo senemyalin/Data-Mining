@@ -82,3 +82,4 @@ def customer_product_score(customer):
         final_score = avg_customer + (score_sum/cor_sum)
         scores.append(final_score)
     data1 = pd.DataFrame({'asin':evaluated_product,'score':scores})
+    recommendation = data1.sort_values(by='score',ascending=False).head(5) #top 5 recommendation
