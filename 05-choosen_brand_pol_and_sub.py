@@ -69,3 +69,17 @@ fig, ax= plt.subplots(figsize=(8,4))
 plt.plot(brand2839_pol_sub.reviewTime,brand2839_pol_sub.polarity, color='lightblue', label= "brand2839 polarity")
 plt.plot(brand3865_pol_sub.reviewTime,brand3865_pol_sub.polarity, color='lightgreen', label= 'brand3865 polarity')
 plt.plot(brand4627_pol_sub.reviewTime,brand4627_pol_sub.polarity, color='pink', label= 'brand4627 polarity')
+
+
+plt.plot(brand2839_pol_sub.reviewTime,brand2839_pol_sub.subjectivity, color='blue', label= "brand2839 subjectivity")
+plt.plot(brand3865_pol_sub.reviewTime,brand3865_pol_sub.subjectivity, color='green', label= 'brand3865 subjectivity')
+plt.plot(brand4627_pol_sub.reviewTime,brand4627_pol_sub.subjectivity, color='purple', label= 'brand4627 subjectivity')
+
+plt.xlabel("Year")
+plt.ylabel("Polarity and Subjectivity")
+plt.legend()
+plt.title("Polarities and Subjectivities & Brand")
+
+
+plt.savefig("Polarities and Subjectivities & Brand.pdf")
+plt.close(fig)
