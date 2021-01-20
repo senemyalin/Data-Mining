@@ -55,3 +55,4 @@ sim_customer_30_c = find_similar_customers(similarity_with_customer,30)
 sim_customer_30_p = find_similar_customers(similarity_with_product,30)
 
 Rating_avg = Rating_avg.astype({"asin": str})
+product_customer = Rating_avg.groupby(by = 'reviewerID')['asin'].apply(lambda x:','.join(x))
