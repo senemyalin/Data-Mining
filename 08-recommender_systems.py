@@ -86,3 +86,5 @@ def customer_product_score(customer):
     product_Name = recommendation.merge(data, how='inner', on='asin')
     product_Names = product_Name["title"].tolist()
     res = [] 
+    [res.append(x) for x in product_Names if x not in res] 
+    return res
