@@ -34,3 +34,4 @@ final_customer = last.apply(lambda row: row.fillna(row.mean()), axis=1)
 a = cosine_similarity(final_customer)
 np.fill_diagonal(a, 0 )
 similarity_with_customer = pd.DataFrame(a,index=final_customer.index)
+similarity_with_customer.columns=final_customer.index
