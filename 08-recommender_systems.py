@@ -76,3 +76,4 @@ def customer_product_score(customer):
         correlated = similarity_with_product.loc[customer,index]
         f = pd.concat([not_null, correlated], axis=1)
         f.columns = ['adg_score','correlation']
+        f['score']=f.apply(lambda x:x['adg_score'] * x['correlation'],axis=1)
