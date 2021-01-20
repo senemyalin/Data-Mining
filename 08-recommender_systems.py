@@ -16,3 +16,4 @@ data["overall"]= data["overall"].astype(int)
 
 
 Mean = data.groupby(by="reviewerID",as_index=False)['overall'].mean()
+Rating_avg = pd.merge(data,Mean,on='reviewerID')
