@@ -9,3 +9,6 @@ data['reviewerID'] = data["reviewerID"].rank(method='dense').astype(int)
 data['asin'] = data["asin"].rank(method='dense').astype(int)
 data['brand'] = data["brand"].rank(method='dense').astype(int)
 data = data.drop(["reviewTime","reviewText","title"],1)
+
+#tahminleme için örneklem sayısını 15000 belirledik
+X= data["asin"].values[:15000]
