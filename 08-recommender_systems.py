@@ -43,6 +43,7 @@ similarity_with_product = pd.DataFrame(cos_sim,index=final_product.index)
 similarity_with_product.columns=final_product.index
 
 def find_similar_customers(dataFrame,n):
-
-  
+    dataFrame = dataFrame.apply(lambda x: pd.Series(x.sort_values(ascending=False)
+           .iloc[:n].index, 
+          index=['top{}'.format(i) for i in range(1, n+1)]), axis=1)
     return dataFrame
