@@ -44,3 +44,21 @@ brand - brand name
 We made text lowercase, removed punctuation and removed words containing numbers. Also
 we got rid of some additional punctuation, non-sensical text that was missed the first time
 around and stop words on ”reviewText” column.
+
+2.1.3 Organizing the data
+
+We organized the cleaned data into a way that is easy to input into other algorithms.
+
+1-We assigned numbers to brands so that the machine could understand, and we gave the same
+numbers to those with the same brand.
+
+2.2 Brand Count
+
+2.2.1 Exploratory Data Analysis
+
+1-We grouped brands according to the number of products they sell.
+2-We saw that how many products were purchased from which brand and how many brands
+are there.
+3-Because our data makes sense, we removed the most and least purchased brands from this
+data.
+4-We plotted our 2 results.
