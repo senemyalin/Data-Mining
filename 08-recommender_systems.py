@@ -35,3 +35,6 @@ a = cosine_similarity(final_customer)
 np.fill_diagonal(a, 0 )
 similarity_with_customer = pd.DataFrame(a,index=final_customer.index)
 similarity_with_customer.columns=final_customer.index
+
+# customer similarity on replacing NAN by Prdouct(Asin) avg
+cos_sim = cosine_similarity(final_product)
