@@ -62,3 +62,50 @@ product3_df = pd.DataFrame(product3,columns=['reviewText'])
 product3_df = product3_df.groupby("reviewText").size().reset_index()
 
 
+d = {}
+for a, x in product1_df.values:
+    d[a] = x
+
+wordcloud = WordCloud(width = 800, height = 800, 
+                background_color ='black', 
+                min_font_size = 10)
+
+wordcloud.generate_from_frequencies(frequencies=d) 
+
+# plot the WordCloud image
+plt.figure(figsize = (8, 10), facecolor = 'w') 
+plt.imshow(wordcloud, interpolation='bilinear') 
+plt.axis("off") 
+plt.tight_layout(pad = 0) 
+
+plt.show() 
+
+d = {}
+for a, x in product2_df.values:
+    d[a] = x
+
+wordcloud.generate_from_frequencies(frequencies=d) 
+
+# plot the WordCloud image
+plt.imshow(wordcloud, interpolation='bilinear') 
+plt.axis("off") 
+plt.tight_layout(pad = 0) 
+
+plt.show()
+
+d = {}
+for a, x in product3_df.values:
+    d[a] = x
+
+
+wordcloud.generate_from_frequencies(frequencies=d) 
+
+# plot the WordCloud image
+plt.imshow(wordcloud, interpolation='bilinear') 
+plt.axis("off") 
+plt.tight_layout(pad = 0) 
+
+plt.show()
+
+
+
