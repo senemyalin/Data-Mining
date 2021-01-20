@@ -1,6 +1,11 @@
 # Data-Mining
 DATA ANALYSIS OF AMAZON’S DATASET
 
+************************
+NOTE:
+Justifying recommendations using distantly-labeled reviews and fined-grained aspects. Jianmo Ni, Jiacheng Li, Julian McAuley. Empirical Methods in Natural Language Processing (EMNLP), 2019.
+************************
+
 Senem Yalın - Almira Gürkan
 
 ABSTRACT
@@ -120,7 +125,7 @@ rate is at the optimum value.
 5-We predicted Brand of product.
 6-We printed error rate and traning time on the console.
 
-2.7 Recommendation Process
+2.7-Recommendation Process
 
 We wanted to predict the products a person could buy by looking at the products and rates
 they purchased.
@@ -146,6 +151,15 @@ customer.
 In conclusion, we worked on NLP(Natural Language Processing), Neural Network Processing and Recommendation System. We learned how to analyze text-based data. In this analysis,
 we cleared the text by removing the punctuation and stop words. As a result of our research, we
 saw that every word has polarity and subjectivity, interpreted according to these values.
+
 Then we worked on application of a neural network with multi layer perceptron. By using
 MLPClassifier we taught the machine the product information and had it guess which brand it
 was.
+
+In addition, we experienced Recommended System. We focused on (User-Based Collaborative Filtering) UB-CF which is a memory-based method. The main idea behind UB-CF is that
+people with similar characteristics share similar taste.
+
+The motivation behind coding this assignment is to deep dive into the algorithm and
+understand how data mining process work. We learned the techniques we will use while
+carrying out these studies by researching and experimenting. As we do such works, we gain the
+ability to produce solutions to existing problems over a real scenario as much as possible.
