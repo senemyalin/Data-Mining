@@ -47,3 +47,4 @@ error_rate = 1 - accuracy
 training_time = (stop - start)
 
 print("\nTraining Time (in ms): ",training_time)
+print("Error (cost): ", error_rate)
