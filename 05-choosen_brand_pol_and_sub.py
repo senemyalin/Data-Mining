@@ -40,4 +40,32 @@ data2839 = data2839.drop('brand',1)
 pol2839=data2839.groupby('reviewTime', as_index=False)['polarity'].mean()
 sub2839=data2839.groupby('reviewTime', as_index=False)['subjectivity'].mean()
 brand2839_pol_sub = pd.merge(pol2839,sub2839, how= 'right', on = 'reviewTime')
-      
+
+data3865 = data.copy()
+for f, row in data3865.iterrows():
+    brand=row['brand']
+    if not (brand == 3865):
+        data3865 = data3865.drop(f,0)
+data3865 = data3865.drop('brand',1)
+
+pol3865=data3865.groupby('reviewTime', as_index=False)['polarity'].mean()
+sub3865=data3865.groupby('reviewTime', as_index=False)['subjectivity'].mean()
+brand3865_pol_sub = pd.merge(pol3865,sub3865, how= 'right', on = 'reviewTime')
+        
+data4627 = data.copy()
+for f, row in data4627.iterrows():
+    brand=row['brand']
+    if not (brand == 4627):
+        data4627 = data4627.drop(f,0)
+data4627 = data4627.drop('brand',1)
+
+pol4627=data4627.groupby('reviewTime', as_index=False)['polarity'].mean()
+sub4627=data4627.groupby('reviewTime', as_index=False)['subjectivity'].mean()
+brand4627_pol_sub = pd.merge(pol4627,sub4627, how= 'right', on = 'reviewTime')
+
+plt.figure()
+fig, ax= plt.subplots(figsize=(8,4))
+
+plt.plot(brand2839_pol_sub.reviewTime,brand2839_pol_sub.polarity, color='lightblue', label= "brand2839 polarity")
+plt.plot(brand3865_pol_sub.reviewTime,brand3865_pol_sub.polarity, color='lightgreen', label= 'brand3865 polarity')
+plt.plot(brand4627_pol_sub.reviewTime,brand4627_pol_sub.polarity, color='pink', label= 'brand4627 polarity')
