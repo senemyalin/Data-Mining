@@ -28,3 +28,17 @@ reviewText_cleaned_df = reviewText_cleaned.to_frame()
 data_last['reviewText'] = reviewText_cleaned_df['reviewText']
 
 
+from sklearn.feature_extraction import text
+stop = text.ENGLISH_STOP_WORDS
+
+pat = r'\b(?:{})\b'.format('|'.join(stop))
+data_last['reviewText'] = data_last['reviewText'].str.replace(pat,'')
+data_last['reviewText'] = data_last['reviewText'].str.replace(r'\s+',' ')
+
+for a, row in data_last.iterrows():  
+    i=row['reviewText'] 
+    if i == '' or i =='                   g' or i == '                       ' or i == '   ' or i==' ' :
+        data_last= data_last.drop(a,0)
+
+
+data_last.to_pickle("data_last_cleaned_reviewText.pkl")
