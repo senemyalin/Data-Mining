@@ -88,3 +88,11 @@ brand, so we found the average number of rate a brand gets.
 
 When we compare two plotting results, saw that brands are generally positive on first plotting
 and these brands got 5 point for overall on second plotting, so our analysis is consistent.
+
+2.4 Changes of Polarity and Subjectivity Over the Years
+
+1-We chose 3 brands according to Sentiment Analysis which is above. One of them has the most
+polarity and subjectivity, one of them has the middle ones and one of them has less ones. We
+wanted to see polarity and subjectivity changes year by year.
+2-We plotted these results.
+
