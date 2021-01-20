@@ -62,3 +62,4 @@ def customer_product_score(customer):
     customer_values = sim_customer_30_p[sim_customer_30_p.index==customer].values
     customer_values_list = customer_values.squeeze().tolist()
     is_in = product_customer[product_customer.index.isin(customer_values_list)]
+    a = ','.join(is_in.values)
