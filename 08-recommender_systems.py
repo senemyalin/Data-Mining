@@ -26,3 +26,6 @@ last = pd.pivot_table(Rating_avg,values='adg_rating',index='reviewerID',columns=
 
 # Replacing NaN by Product(Asin) Average
 final_product = last.fillna(last.mean(axis=0))
+
+# Replacing NaN by user Average
+final_customer = last.apply(lambda row: row.fillna(row.mean()), axis=1)
