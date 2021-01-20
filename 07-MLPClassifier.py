@@ -43,3 +43,7 @@ stop = time.time()
 accuracy=clf.score(X_test, y_test)
 y_pred = clf.predict(X_test)
 error_rate = 1 - accuracy
+
+training_time = (stop - start)
+
+print("\nTraining Time (in ms): ",training_time)
