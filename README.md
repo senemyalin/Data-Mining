@@ -77,3 +77,14 @@ Polarity: How positive or negative a word is. -1 is very negative. +1 is very po
 Subjectivity: How subjective, or opinionated a word is. 0 is fact. +1 is very much an opinion.
 
 4-We plotted these results
+
+2.3.2 Rate Analysis
+
+1-We took the average of product rates that have the same brand and assigned them to that
+brand, so we found the average number of rate a brand gets.
+2-We grouped overall according to brand then plotted as bar chart.
+
+2.3.3 Results
+
+When we compare two plotting results, saw that brands are generally positive on first plotting
+and these brands got 5 point for overall on second plotting, so our analysis is consistent.
