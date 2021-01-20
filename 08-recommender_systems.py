@@ -83,3 +83,4 @@ def customer_product_score(customer):
         scores.append(final_score)
     data1 = pd.DataFrame({'asin':evaluated_product,'score':scores})
     recommendation = data1.sort_values(by='score',ascending=False).head(5) #top 5 recommendation
+    product_Name = recommendation.merge(data, how='inner', on='asin')
