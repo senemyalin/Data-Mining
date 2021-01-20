@@ -74,3 +74,4 @@ def customer_product_score(customer):
         avg_customer = Mean.loc[Mean['reviewerID'] == customer,'overall'].values[0]
         index = not_null.index.values.squeeze().tolist()
         correlated = similarity_with_product.loc[customer,index]
+        f = pd.concat([not_null, correlated], axis=1)
