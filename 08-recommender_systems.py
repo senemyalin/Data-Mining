@@ -81,3 +81,4 @@ def customer_product_score(customer):
         cor_sum = f['correlation'].sum()
         final_score = avg_customer + (score_sum/cor_sum)
         scores.append(final_score)
+    data1 = pd.DataFrame({'asin':evaluated_product,'score':scores})
