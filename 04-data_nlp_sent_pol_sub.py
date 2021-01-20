@@ -50,3 +50,22 @@ plt.ylabel('<-- Facts -------- Opinions -->', fontsize=15)
 
 plt.savefig("pol_sub_brand_scatter.pdf")
 plt.close(fig)
+
+
+###5,4,3,2,1 puan alan marka sayılarını yazdırdık.
+plt.figure()
+fig, ax= plt.subplots(figsize=(8,4))
+
+star=data.groupby('overall', as_index=False)['brand'].size()
+
+star.plot.bar(x='overall',y='size', rot=0)
+plt.xlabel('Overall', fontsize=15)
+plt.ylabel('Brand', fontsize=15)
+
+plt.savefig("rate_brand_barchart.pdf")
+plt.close(fig)
+
+
+###Genel olarak markaların 5 yıldız aldığını gördük ve 
+#aynı zamanda markaların polarity ve subjectivitylerinin olumlu olduğunu gördük. 
+#Karşılaştırmalarımız tutarlı ve başarılı.
