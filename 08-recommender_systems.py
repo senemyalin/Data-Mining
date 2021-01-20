@@ -38,3 +38,4 @@ similarity_with_customer.columns=final_customer.index
 
 # customer similarity on replacing NAN by Prdouct(Asin) avg
 cos_sim = cosine_similarity(final_product)
+np.fill_diagonal(cos_sim, 0 )
