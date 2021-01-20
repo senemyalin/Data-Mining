@@ -34,4 +34,13 @@ for b, row in meta_all_beauty_copy.iterrows():
 #pickle it for later use   
 meta_all_beauty_copy_not_null.to_pickle("meta_all_beauty_not_null.pkl")
 
+
+all_beauty_second = pd.read_pickle('all_beauty_second.pkl')
+meta_all_beauty_not_null = pd.read_pickle('meta_all_beauty_not_null.pkl')
+
+data_last = pd.merge(all_beauty_second,meta_all_beauty_not_null, how= 'right', on = 'asin')
+
+data_last.to_pickle("data_last.pkl")
+
+
     
