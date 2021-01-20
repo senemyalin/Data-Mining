@@ -73,3 +73,4 @@ def customer_product_score(customer):
         not_null = is_in[is_in.notnull()]
         avg_customer = Mean.loc[Mean['reviewerID'] == customer,'overall'].values[0]
         index = not_null.index.values.squeeze().tolist()
+        correlated = similarity_with_product.loc[customer,index]
