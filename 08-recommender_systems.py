@@ -78,3 +78,4 @@ def customer_product_score(customer):
         f.columns = ['adg_score','correlation']
         f['score']=f.apply(lambda x:x['adg_score'] * x['correlation'],axis=1)
         score_sum = f['score'].sum()
+        cor_sum = f['correlation'].sum()
