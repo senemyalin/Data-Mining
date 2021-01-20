@@ -66,3 +66,5 @@ def customer_product_score(customer):
     product_bought_by_similar_customer = a.split(',')
     evaluated_product = list(set(product_bought_by_similar_customer)-set(list(map(str, product_bought_by_customer))))
     evaluated_product = list(map(int, evaluated_product))
+    scores = []
+    for product in evaluated_product:
