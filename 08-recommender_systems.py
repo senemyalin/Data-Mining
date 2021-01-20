@@ -88,3 +88,6 @@ def customer_product_score(customer):
     res = [] 
     [res.append(x) for x in product_Names if x not in res] 
     return res
+
+
+customer = int(input("Enter the customer ID: "))
