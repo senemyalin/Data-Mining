@@ -71,3 +71,4 @@ def customer_product_score(customer):
         choosen_product = final_product.loc[:,product]
         is_in = choosen_product[choosen_product.index.isin(customer_values_list)]
         not_null = is_in[is_in.notnull()]
+        avg_customer = Mean.loc[Mean['reviewerID'] == customer,'overall'].values[0]
