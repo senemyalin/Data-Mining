@@ -105,3 +105,13 @@ wanted to see polarity and subjectivity changes year by year.
 5-We grouped our words according to how many are these.
 6-Since dataframe type does not work on Wordcloud,so we put these datas into ”dictionary” and
 plotted them as word cloud.
+
+2.6-Neural Network Process
+
+We taught the product information and tried to guess which brand it was.
+
+1-We assigned a number to ”asin”, ”brand” and ”reviewerID”, so that the machine could
+understand.
+2-We split our data such that randomly selected 70 tuples are used for training while 30 tuples
+are used for testing.
+3-We applied MLPClassifier on training data
