@@ -95,3 +95,7 @@ predicted_product = customer_product_score(customer)
 print(" ")
 print("The Recommendations of 5 Products for :",customer)
 print(" ")
+k=1
+for i in predicted_product:
+    print(k,")",i,"\n")
+    k=k+1
