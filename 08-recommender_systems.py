@@ -47,3 +47,6 @@ def find_similar_customers(dataFrame,n):
            .iloc[:n].index, 
           index=['top{}'.format(i) for i in range(1, n+1)]), axis=1)
     return dataFrame
+
+# top 30 neighbours for each customer
+sim_customer_30_c = find_similar_customers(similarity_with_customer,30)
