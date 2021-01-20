@@ -115,3 +115,21 @@ understand.
 2-We split our data such that randomly selected 70 tuples are used for training while 30 tuples
 are used for testing.
 3-We applied MLPClassifier on training data
+4-We determined the number of rows and we gave value to the hidden layer size for the error
+rate is at the optimum value.
+5-We predicted Brand of product.
+6-We printed error rate and traning time on the console.
+
+2.7 Recommendation Process
+
+We wanted to predict the products a person could buy by looking at the products and rates
+they purchased.
+
+1-We assigned a number to ”asin”, ”brand” and ”reviewerID”, so that the machine could
+understand.
+2-We calculated the normalized rating for a customer. This data would be used to calculate the
+final score for the customer later.
+3-We have used cosine similarity function of sklearn to calculate the similarity.
+4-We used two methods commonly used for this :
+a)The customer average over the row.
+b)The product average over the column.
