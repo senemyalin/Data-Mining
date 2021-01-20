@@ -33,3 +33,4 @@ final_customer = last.apply(lambda row: row.fillna(row.mean()), axis=1)
 # customer similarity on replacing NAN by Customer(Reviewer) avg
 a = cosine_similarity(final_customer)
 np.fill_diagonal(a, 0 )
+similarity_with_customer = pd.DataFrame(a,index=final_customer.index)
